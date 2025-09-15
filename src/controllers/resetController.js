@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken"
 import { sendEmail } from "../services/sendEmail.js";
 import User from "../models/User.js";
 import bcrypt  from "bcryptjs";
+import dotenv from "dotenv";
+dotenv.config()
 
 
 export const forgotpassword = async (req,res) =>{
